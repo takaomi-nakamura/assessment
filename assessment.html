@@ -20,6 +20,256 @@
         </script>
     </div>
     <script src="assessment.js"></script>
+     <textarea>htmltag
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>レイアウト作成練習</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.6.0/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="練習web.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="header">
+            <h1><img src="dummy.png" height="100" width="600"></h1></div>
+            <h2>ツールとか色々なリンク集など</h2>
+
+        <div id="menu">
+            <ul>
+                <li><a href="埋め込み欄" target="_blank">リンク１</a></li>
+                <li><a href="埋め込み欄" target="_blank">リンク２</a></li>
+                <li><a href="埋め込み欄" target="_blank">リンク３</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">作成者： tak_nakamura</div>
+
+        <div id="main">
+
+            <div id="contents">
+                <h2>見出し</h2>
+                <p>
+                    住所：沖縄県沖縄市海邦1-7-44 <br>
+                    TEL：080-2782-0706 <br>
+                    FAX： 098-930-4122<br>
+                営業時間： 09:00〜20:00 <br>
+                  定休日：無し <br>
+                  駐車場：<br></p>
+                <p>※本文。　　　　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text</p>
+                <ul class="products">
+                    <li>
+                        <img src="dummy.png" width="60" height="60">
+                        <!--画像つきlist-->
+                        <p>説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。</p>
+                    </li>
+                </ul>
+                <ul class="products">
+                    <li>
+                        <img src="dummy.png" width="60" height="60">
+                        <!--画像つきlist-->
+                        <p>説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。</p>
+                    </li>
+                </ul>
+                <ul class="products">
+                    <li>
+                        <img src="dummy.png" width="60" height="60">
+                        <p>説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。説明です。</p>
+                    </li>
+                </ul>
+                <h2>見出し</h2>
+                <div class="sample">
+                    <span class="badge">new!</span>
+                    <img src="dummy.png" width="60" height="60">
+                    <p>補足。 補足。 </p>
+                </div>
+                <p>※本文。　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text</p>
+                <p>※本文。　　　　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text</p>
+            </div><!-- contents -->
+                
+            <div id="sidebar">
+                <h3>見出し</h3><!-- 右見出し１番目 -->
+                <p>※本文。　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text</p>
+                
+                <h3>見出し</h3><!-- 右見出し２番目 -->
+                <p>※本文。　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text　text</p>
+                <ul class="submenu"><!--　右下のサブメニュー　-->
+                <li><a href="">menu 1</a></li>
+                <li><a href="">menu 2</a></li>
+                <li><a href="">menu 3</a></li>
+                </ul>
+            </div><!-- sidebar -->
+
+
+
+
+        </div><!-- #main -->
+
+
+
+    </div><!-- #container -->
+    </textarea>
+</body>
+
+</html></textarea>
+<textarea>csstag
+    /* mycss.css */
+
+html {
+    background-image: url('grey.png');
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Verdana, Arial;
+    font-size: 14px;
+}
+
+body > #container {
+    height: auto;
+}
+
+#container {
+    min-height: 100%;
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+#header {
+    margin-bottom: 15px;
+}
+
+#menu {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#main {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#contents {
+    float: left;
+    width: 400px;
+}
+#sidebar {
+    float: right;
+    width: 180px;
+}
+
+#footer {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 20px;
+}
+
+#menu ul>li {
+    float: left;
+    width: 100px;
+    font-size: 13px;
+    text-align: center;
+    padding: 4px;
+    background: #ccc;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#menu ul>li:hover {
+    background: #ddd;
+}
+
+#menu ul>li>a {
+    text-decoration: none;
+    display: block;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    border-left: 5px solid #ccc;
+    padding: 3px 0 3px 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+ul.products {
+    margin-bottom: 15px;
+}
+ul.products>li {
+    overflow: hidden;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom: 1px dotted #ccc;
+}
+ul.products>li:last-child {
+    border: none;
+}
+ul.products>li>img {
+    float: left;
+    width: 60px;
+}
+ul.products>li>p {
+    margin-left: 70px;
+    font-size: 13px;
+}
+
+div.sample {
+    float: right;
+    width: 66px;
+    margin-left: 10px;
+    position: relative;
+}
+
+div.sample>p {
+    font-size: 10px;
+}
+div.sample>img {
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.badge {
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px 3px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+ul.submenu>li {
+    background: url('dot.png') no-repeat;
+    padding:0 0 5px 20px;
+}
+
+</textarea>
 </body>
 
 </html>
